@@ -5,8 +5,8 @@ This is a helm chart for [frigate](https://github.com/blakeblackshear/frigate)
 ## TL;DR;
 
 ```shell
-$ helm repo add blakeshome https://blakeblackshear.github.io/blakeshome-charts/
-$ helm install blakeshome/frigate
+$ helm repo add zad https://zad80.github.io/helm/
+$ helm install zad/frigate
 ```
 
 ## Requirements
@@ -28,7 +28,7 @@ helm install mosquitto k8s-at-home/mosquitto
 
 ### Install Frigate
 ```console
-helm install frigate blakeshome/frigate
+helm install frigate zad/frigate
 ```
 
 If using the Coral USB TPU module (strongly recommended), you can use `nodeAffinity` rules to designate which node the pod is scheduled to in order to have host-access to the device, for example:
@@ -59,20 +59,20 @@ The command removes all the Kubernetes components associated with the chart and 
 
 ## Configuration
 
-Read through the [values.yaml](https://github.com/blakeblackshear/blakeshome-charts/blob/master/charts/frigate/values.yaml) file. It has several commented out suggested values.
+Read through the [values.yaml](https://github.com/zad80/helm/blob/master/charts/frigate/values.yaml) file. It has several commented out suggested values.
 
-Also reference https://blakeblackshear.github.io/frigate/configuration/index for detailed frigate configuration settings.
+Also reference https://zad80.github.io/frigate/configuration/index for detailed frigate configuration settings.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
 ```console
 helm install frigate \
   --set rtspPassword="someValue" \
-    blakeshome/frigate
+    zad/frigate
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart. For example,
 
 ```console
-helm install --name frigate -f values.yaml blakeshome/frigate
+helm install --name frigate -f values.yaml zad/frigate
 ```

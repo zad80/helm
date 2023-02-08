@@ -6,7 +6,7 @@ NVR With Realtime Object Detection for IP Cameras
 
 This Helm Chart installs [Frigate](https://frigate.video/) on to Kubernetes.
 
-**Homepage:** <https://github.com/blakeblackshear/blakeshome-charts/tree/master/charts/frigate>
+**Homepage:** <https://https://github.com/zad80/helm/tree/master/charts/frigate>
 
 ## Install
 
@@ -17,7 +17,7 @@ Kubernetes cluster by running the following:
 
 First, add the repo if you haven't already done so:
 ```bash
-helm repo add blakeblackshear https://blakeblackshear.github.io/blakeshome-charts/
+helm repo add zad https://zad80.github.io/helm/
 ```
 
 #### Minimum Config
@@ -58,10 +58,9 @@ helm upgrade --install \
 
 ## Maintainers
 
-| Name | Email | Url |
-| ---- | ------ | --- |
-| blakeblackshear | blakeb@blakeshome.com |  |
-| billimek | jeff@billimek.com |  |
+| Name     | Email             | Url |
+|----------|-------------------| --- |
+| zad      | zad80@gmail.com   |  |
 
 ## Source Code
 
